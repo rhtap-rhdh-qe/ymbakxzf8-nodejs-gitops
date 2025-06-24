@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: ymbakxzf8-nodejs
+  janus-idp.io/tekton: ymbakxzf8-nodejs
+  backstage.io/kubernetes-id: ymbakxzf8-nodejs
+  backstage.io/kubernetes-namespace: tssc-app 
+  app.kubernetes.io/part-of: ymbakxzf8-nodejs
+resources:
+  - deployment.yaml
+  - route.yaml
+  - service.yaml
